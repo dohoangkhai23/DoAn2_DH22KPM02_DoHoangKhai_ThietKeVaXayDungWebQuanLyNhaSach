@@ -1,0 +1,197 @@
+/* CSS cho Chatbot */
+#chatbot-toggler {
+    position: fixed;
+    bottom: 85px;
+    right: 25px;
+    width: 60px;
+    height: 60px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+#chatbot-container {
+    position: fixed;
+    bottom: 160px;
+    right: 25px;
+    width: 350px;
+    height: 450px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    display: none; /* Ẩn ban đầu */
+    flex-direction: column;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.chatbot-header {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chatbot-header #close-chatbot {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#chat-messages {
+    flex-grow: 1;
+    padding: 15px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.chat-message {
+    padding: 8px 12px;
+    border-radius: 18px;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+.user-message {
+    background-color: #007bff;
+    color: white;
+    align-self: flex-end;
+}
+
+.bot-message {
+    background-color: #f1f1f1;
+    color: #333;
+    align-self: flex-start;
+}
+
+.chatbot-input-form {
+    display: flex;
+    border-top: 1px solid #ddd;
+    padding: 10px;
+}
+
+#chatbot-input {
+    flex-grow: 1;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 10px 15px;
+    margin-right: 10px;
+    outline: none;
+}
+
+#chatbot-send {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* --- Kiểu dáng cho danh sách sách --- */
+
+.bot-message.book-list {
+    background-color: transparent;
+    padding: 0;
+    max-width: 100%;
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+}
+
+.book-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 8px;
+    min-width: 100px;
+    max-width: 120px;
+    transition: background-color 0.2s;
+}
+
+.book-item:hover {
+    background-color: #f9f9f9;
+}
+
+.book-image {
+    width: 80px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+.book-title {
+    font-size: 12px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+
+/* Kiểu dáng cho thanh cuộn ngang của danh sách sách */
+.book-list::-webkit-scrollbar {
+    height: 6px;
+}
+
+.book-list::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 3px;
+}
+
+.book-list::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+/* Kiểu dáng cho chỉ báo "đang gõ" */
+.bot-message.typing span {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    background-color: #999;
+    border-radius: 50%;
+    margin: 0 1px;
+    animation: typing-animation 1.4s infinite;
+}
+
+.bot-message.typing span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.bot-message.typing span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes typing-animation {
+    0%, 70%, 100% {
+        transform: scale(0);
+    }
+    35% {
+        transform: scale(1);
+    }
+}

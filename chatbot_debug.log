@@ -1,0 +1,106 @@
+[2026-03-16 14:38:39] Array
+(
+    [message] => tôi cần mua sách lập trình c++ giá bao nhiêu
+)
+
+[2026-03-16 14:38:56] Array
+(
+    [message] => lập trình
+)
+
+[2026-03-16 14:39:20] Array
+(
+    [message] => lập trình  hướng đối tượng
+)
+
+[2026-03-16 14:39:42] Array
+(
+    [message] => tôi cần tư vấn truyện doraemon
+)
+
+[2026-03-16 14:39:58] Array
+(
+    [message] => thể loại văn học
+)
+
+[2026-03-16 14:40:17] Array
+(
+    [message] => tư vấn giá cả cho tôi
+)
+
+[2026-03-16 15:08:42] Array
+(
+    [message] => tôi mún tư vấn sách doraemon
+)
+
+[2026-03-16 15:08:42] DB Error (Recommendation): SQLSTATE[42S22]: Column not found: 1054 Unknown column 'MaSP' in 'field list'
+[2026-03-16 15:12:44] Array
+(
+    [message] => fdfd
+)
+
+[2026-03-16 15:12:54] Array
+(
+    [message] => sách doraemon
+)
+
+[2026-03-16 15:13:03] Array
+(
+    [message] => sách lập trình
+)
+
+[2026-03-16 15:13:13] Array
+(
+    [message] => sách lập trình
+)
+
+[2026-03-16 15:39:04] Array
+(
+    [message] => giá tiểu thuyết
+)
+
+[2026-03-16 15:39:32] Array
+(
+    [message] => tư vấn cho tôi một vài cuốn sách
+)
+
+[2026-03-16 15:40:00] Array
+(
+    [message] => tìm sách thể loại văn học
+)
+
+[2026-03-16 15:40:19] Array
+(
+    [message] => tìm các loại sách kinh tế
+)
+
+[2026-03-16 15:40:30] Array
+(
+    [message] => lập trình
+)
+
+[2026-03-16 15:40:49] Array
+(
+    [message] => một vài cuốn sách được không
+)
+
+[2026-03-16 15:41:09] Array
+(
+    [message] => tư vấn cho tôi một vài cuốn sách
+)
+
+[2026-03-16 15:41:19] Array
+(
+    [message] => tên sách đâu
+)
+
+[2026-03-16 15:41:33] Array
+(
+    [message] => một vài cuốn sách sau đây
+)
+
+[2026-03-17 04:07:14] Array
+(
+    [message] => hello
+)
+

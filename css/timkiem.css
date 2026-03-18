@@ -1,0 +1,25 @@
+.product-grid-container {
+    padding: 120px 80px 50px; /* Thêm padding top để không bị header che */
+}
+
+.page-title {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #333;
+    text-align: center;
+}
+
+.no-results {
+    text-align: center;
+    font-size: 18px;
+    color: #777;
+    margin-top: 50px;
+}
+
+/* Sử dụng lại product-grid và product-card từ SanPham.css */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 30px;
+    justify-content: center;
+}
